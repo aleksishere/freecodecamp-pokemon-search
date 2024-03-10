@@ -1,0 +1,141 @@
+@import url(https://fonts.bunny.net/css?family=aldrich:400);
+
+* {
+  margin: 0;
+  font-family: 'Aldrich', sans-serif;
+}
+
+body {
+  background-color: #C6B89E;
+}
+
+main {
+  padding-top: 50px;
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+}
+
+.top-menu {
+  background-color: #949276;
+  display: grid;
+  justify-items: center;
+  gap: 3px;
+  padding: 14px 20px;
+  border-radius: 12px;
+  border: 7px solid #818068;
+  -webkit-box-shadow: 8px 8px 17px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 17px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 17px 0px rgba(66, 68, 90, 1);
+}
+
+.top-menu button {
+  font-size: 18px;
+  padding: 6px 12px;
+}
+
+.console  {
+  background-color: #949276;
+  border: 7px solid #818068;
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  min-height: 500px;
+  -webkit-box-shadow: 16px 16px 32px 0px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 16px 16px 32px 0px rgba(66, 68, 90, 1);
+  box-shadow: 16px 16px 32px 0px rgba(66, 68, 90, 1);
+}
+
+.console-screen {
+  background-color: #929d97;
+  height: 250px;
+  display: grid;
+  padding: 12px;
+  border: 5px solid black;
+  box-sizing: border-box;
+  box-shadow: inset 7px 7px 10px rgba(0, 0, 0, 0.7),
+      inset -2px -2px 5px rgba(255, 255, 255, 0.3);
+}
+
+.main-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+#weight, #height, #types {
+  display: block;
+}
+
+.button-a,
+.button-b {
+  height: 40px;
+  padding: 22px 20px;
+  border-radius: 50%;
+  background-color: rgb(172, 31, 31);
+  border: 3px solid black;
+  -webkit-box-shadow: inset 0px 0px 53px 0px rgb(138, 25, 25);
+    -moz-box-shadow: inset 0px 0px 53px 0px rgb(138, 25, 25);
+    box-shadow: inset 0px 0px 53px 0px rgb(138, 25, 25);
+}
+
+.d-pad {
+  background-color: #1d1d1d;
+  color: white;
+  border: 3px solid black;
+  border-radius: 4px;
+  padding: 4px 13px;
+  font-size: 25px;
+  font-family: monospace;
+}
+
+.console-body {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.button-a {
+  position: relative;
+  right: 10px;
+  top: 50px;
+}
+.button-b {
+  position: relative;
+  right: 10px;
+  top: 20px;
+}
+
+.d-pad-body {
+  display: grid;
+    grid-template-areas: 
+    "a b c"
+    "d e f"
+    "g h i";
+    gap: 1px;
+}
+
+.up {
+  grid-area: b;
+}
+
+.down {
+  grid-area: h;
+}
+
+.left {
+  grid-area: d;
+}
+
+.right {
+  grid-area: f;
+}
+
+.middle {
+  grid-area: e;
+}
+
+input {
+  font-size: 20px;
+  padding: 5px 4px;
+}

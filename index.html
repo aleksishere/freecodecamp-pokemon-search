@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head >
+  <meta charset="UTF-8">
+  <title>Pokémon Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main>
+    <div class="top-menu">
+      <input type="text" name="search-input" id="search-input" required>
+      <button id="search-button">Search</button>
+    </div>
+    <div class="console">
+      <div class="console-screen">
+        <div class="main-info">
+          <div>
+            <span id="pokemon-name"></span>
+            <span id="pokemon-id"></span>
+            <span id="weight"></span>
+            <span id="height"></span>
+            <span id="types"></span>
+          </div>
+          <img id="sprite">
+        </div>
+        <p id="hp"></p>
+        <p id="attack"></p>
+        <p id="defense"></p>
+        <p id="special-attack"></p>
+        <p id="special-defense"></p>
+        <p id="speed"></p>
+      </div>
+      <div class="console-body">
+        <div class="d-pad-body">
+          <button class="d-pad up">↑</button>
+          <button class="d-pad down">↓</button>
+          <button class="d-pad left">←</button>
+          <button class="d-pad right">→</button>
+          <button class="d-pad middle"></button>
+        </div>
+        <div class="buttons-body">
+          <button class="button-a">&nbsp</button>
+          <button class="button-b">&nbsp</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
