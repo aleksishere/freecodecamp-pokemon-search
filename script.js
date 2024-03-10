@@ -35,11 +35,11 @@ function updateData(data) {
   for (let type in data.types) {
     document.getElementById('types').innerHTML += `<p>${data.types[type].type.name.toUpperCase()}</p>`
   }
-  document.getElementById('hp').innerText = data.stats[0].base_stat
-  document.getElementById('attack').innerText = data.stats[1].base_stat
-  document.getElementById('defense').innerText = data.stats[2].base_stat
-  document.getElementById('special-attack').innerText = data.stats[3].base_stat
-  document.getElementById('special-defense').innerText = data.stats[4].base_stat
-  document.getElementById('speed').innerText = data.stats[5].base_stat
+  document.getElementById('hp').innerText = `HP: ${data.stats[0].base_stat}`
+  document.getElementById('attack').innerText = `ATK: ${data.stats[1].base_stat}`
+  document.getElementById('defense').innerText = `DEF: ${data.stats[2].base_stat}`
+  document.getElementById('special-attack').innerText = `SPECIAL ATK: ${data.stats[3].base_stat}`
+  document.getElementById('special-defense').innerText = `SPECIAL DEF: ${data.stats[4].base_stat}`
+  document.getElementById('speed').innerText = `SPEED: ${data.stats[5].base_stat}`
   document.getElementById('sprite').src = data.sprites.front_default
 }
